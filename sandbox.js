@@ -310,14 +310,23 @@
 // }
 
 // variables & block scope
-let age = 30;
-if(true){
-    let age = 40;
-    let name = 'mario';
-    console.log('inside 1st block:', age, name);
-    if(true){
-        let age = 50;
-        console.log('inside 2nd block:', age);
-    }
+// let age = 30;
+// if(true){
+//     let age = 40;
+//     let name = 'mario';
+//     console.log('inside 1st block:', age, name);
+//     if(true){
+//         let age = 50;
+//         console.log('inside 2nd block:', age);
+//     }
+// }
+// console.log('outside block:', age, name);
+
+// functions
+function greetUser(name, timeOfDay){
+    console.log(`good ${timeOfDay} ${name}`);
 }
-console.log('outside block:', age, name);
+greetUser('mario', 'morning');
+greetUser('luigi', 'afternoon');
+greetUser('toad', 'evening');
+// function calculateArea(radius){
